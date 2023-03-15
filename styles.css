@@ -1,0 +1,262 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+ body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    background-color: #181818;
+    color: #fff;
+    overflow: hidden;
+ }
+
+
+ h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+ }
+
+ #wrapper {
+    display: flex;
+    flex-direction: row;
+ }
+
+ #left {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ height: 100vh;
+ justify-content: center;
+ flex: 1;
+ }
+
+ #right {
+flex: 1;
+ }
+
+ /* sign in */
+
+ #signin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding-bottom: 1rem;
+ }
+
+ #signin form {
+width: 80%;
+padding-bottom: 3rem;
+ }
+
+
+ #signin .logo {
+    padding-bottom: 8vh;
+ }
+
+ #signin .logo img {
+width: 300px;
+
+ }
+
+ #signin label {
+    font-size: 0.9rem;
+    line-height: 2rem;
+    font-weight: 500;
+ }
+
+ #signin .text-input {
+    margin-bottom: 1.3rem;
+    width: 100%;
+    border-radius: 2px;
+    background-color: #181818;
+    border: 1px solid #555;
+    color: #ccc;
+    padding: 0.5rem 1rem;
+    line-height: 1.5rem;
+ }
+
+#signin .link,
+#signin .btn-create,
+#signin .or {
+    width: 60%;
+}
+
+#signin .link a {
+    display: block;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    color: #2ea0d6;
+    text-align: center;
+}
+#signin .or {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.3rem;
+    align-items: center;
+}
+#signin .or .bar {
+    flex: auto;
+    border: none;
+    height: 1px;
+    background: #aaa;
+}
+
+#signin .or span {
+    padding: 0 0.8rem;
+    color: #ccc
+}
+
+
+#showcase {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('images/login-bg.jpg');
+    height: 100vh; 
+   
+}
+
+
+#showcase .showcase-content {
+    width: 100%;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: #fff;
+    text-align: center;
+}
+
+#showcase .secondary-btn {
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* FOOTER */
+
+#main-footer {
+    font-size: 0.9rem;
+    padding-top: 2rem;
+    color: #ccc;
+    max-width: 80%;
+    text-align: center;
+    margin: 0
+}
+
+#main-footer a {
+    color: #fff;
+    text-decoration: none;
+    padding-top: 0;
+}
+
+#main-footer a:hover {
+    color: #2ea0d6;
+}
+
+/* BUTTON */
+#signin .primary-btn {
+    width: 100%;
+}
+
+.primary-btn:hover {
+    background-color: #0070ab;
+}
+
+.primary-btn {
+    padding: 0.7rem 1rem;
+    border-radius: 4px;
+    height: 2.7rem;
+    display: block;
+    font-weight: 500;
+    background-color: #0074ab;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.5s;
+    border: none;
+}
+
+.create-btn {
+    padding: 0.7rem 1rem;
+    border-radius: 4px;
+    height: 2.7rem;
+    display: block;
+    font-weight: 500;
+    background-color: rgba(138,153,168,.25);
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.5s;
+
+}
+
+.create-btn:hover {
+background-color: rgba(161, 175, 161, 0.25);
+}
+
+
+
+.secondary-btn:hover {
+    background-color: none;
+}
+
+.secondary-btn {
+    padding: 0.7rem 1rem;
+    border-radius: 2px;
+    height: 2.7rem;
+    display: block;
+    font-weight: 500;
+    background-color: none;
+    color: hsla(0,0%,100%,.95);
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.5s;
+    border: 1px solid hsla(0,0%,100%,.3);
+}
+
+
+ /* MEDIA QUERIES */
+
+@media(min-width: 1200px) {
+    
+    #left {
+        flex: 4;
+    }
+    #right {
+        flex: 6;
+    }
+}
+
+@media(max-width: 768px) {
+    #body {
+        overflow: auto;
+    }
+
+    #signin .logo {
+        padding-bottom: 4vh;
+    }
+
+    #signin .text-input {
+        margin-bottom: 0.7rem;
+    }
+
+    #main-footer {
+        padding-top: 1rem;
+    }
+    #left {
+        justify-content: start;
+        margin-top: 4vh;
+    }
+    #right {
+    display: none;
+
+}
+}
